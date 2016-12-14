@@ -1,0 +1,72 @@
+body {
+  padding-top: 70px;
+  background-color: red;
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.jumbotron {
+  position: relative;
+  opacity: 0.9;
+}
+
+#index_img img {
+  float: right;
+  margin: 20px;
+}
+
+.map {
+  float: right;
+}
+
+#center-text img {
+  position: absolute;
+  opacity: 0.9;
+  right: 40px;
+  top: 15px;
+}
+
+#jumbotron {
+  color: white;
+  background: none;
+  margin-bottom: 150px;
+  margin-top: 150px;
+  width: 60%;
+  text-align: center;
+  padding: 5px;
+}
+
+#jumbotron h1 {
+  font-size: 100px;
+  opacity: no-inherit;
+}
+
+#jumbotron p {
+  font-size: 40px;
+  opacity: 0.9;
+}
+
+#video {
+  background: 0;
+  opacity: 1;
+  padding: 0;
+  margin-top: 150px;
+
+.my-flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#center-text {
+  padding-right: 500px;
+}
+
+#container-input-group {
+  display: block;
+  width: 50%;
+  border: 10px solid black;
+  margin-bottom: 20px;
+}
