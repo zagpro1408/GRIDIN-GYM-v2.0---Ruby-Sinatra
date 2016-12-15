@@ -18,14 +18,24 @@
           <label for="email_input"><p>Ваш Email</p></label>
           <input type="email" class="form-control" placeholder="info@gridingym.by" name="email_input" id ="email_input" value="<%= @email_input%>">
         <br>
-            <label for="trainer_input"><p>Ваш тренер</p></label>
-            <p><select class="form-control" name="trainer_input" id="trainer_input" required>
-              <option disabled>Выберите тренера</option>
-              <option value="Гридин Андрей" selected>Гридин Андрей</option>
-              <option value="Ковтик Александр">Ковтик Александр</option>
-              <option value="Игнашов Алексей">Игнашов Алексей</option>
-              <option value="Крыкля Роман">Крыкля Роман</option>
-             </select></p>
+
+         <!--
+          Выбор тренера (выпадающий список)
+          Если тренер был выбран, а другие поля не были заполнены, то выбор тренера сохранится. -->
+          <label for="trainer_input"><p>Ваш тренер</p></label>
+          <p><select class="form-control" name="trainer_input" id="trainer_input">
+
+            <option value="Гридин Андрей" <%= @trainer_input == "Гридин Андрей" ?
+            "selected" : "" %>>Гридин Андрей</option>
+            <option value="Ковтик Александр" <%= @trainer_input == "Ковтик Александр" ?
+            "selected" : "" %>>Ковтик Александр</option>
+            <option value="Игнашов Алексей" <%= @trainer_input == "Игнашов Алексей" ?
+            "selected" : "" %>>Игнашов Алексей</option>
+            <option value="Крыкля Роман" <%= @trainer_input == "Крыкля Роман" ?
+            "selected" : "" %>>Крыкля Роман</option>
+
+          </select></p>
+
       </div>
     </div>
     <br>
